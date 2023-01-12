@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+header {
+    background-color: darkseagreen;
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        display: block;
+    }
+}
+
+footer {
+    display: none;
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+@media print {
+    footer {
+        display: block;
+    }
+}
+
